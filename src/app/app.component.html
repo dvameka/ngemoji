@@ -1,0 +1,11 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<mat-toolbar color="primary">
+  The Big Hairy Book Library Database
+</mat-toolbar>
+
+<app-finditem (itemList)="propagateList($event)"></app-finditem>
+<app-listitem [passResult]="itemResult"></app-listitem>
+
+<!--
+<app-listitem [passResult]="itemResult" (click)="refreshData($event)"></app-listitem>
+-->

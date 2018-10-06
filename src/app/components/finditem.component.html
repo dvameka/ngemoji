@@ -1,0 +1,25 @@
+
+<form #myForm="ngForm" (ngSubmit)="searchItem(myForm)">
+
+    <div class="container" fxLayout="column">
+        <div class="item1" fxFlex=99%><mat-form-field><input matInput name="title" placeholder="Book title" ngModel></mat-form-field></div>
+        <div class="item1" fxFlex=99%><mat-form-field><input matInput name="author" placeholder="Author Name" ngModel></mat-form-field></div>
+
+        <div class="item1" fxFlex=50%>
+        <mat-form-field>
+          <mat-select name="limit" placeholder="# Results" ngModel >
+            <mat-option value=5> 5 </mat-option>
+            <mat-option value=10 default> 10 </mat-option>
+            <mat-option value=50> 50 </mat-option>
+          </mat-select>
+        </mat-form-field>
+        </div>
+
+        <div class="container" fxLayout="row">
+        <div class="item6" fxFlex=50%>
+          <button type="submit" mat-raised-button color=accent [disabled]="myForm.invalid">Search</button>
+        </div>
+      </div>
+    </div>
+    
+    </form>
