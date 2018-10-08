@@ -1,0 +1,13 @@
+<mat-form-field>
+  <mat-select (selectionChange)="triggerResize()">
+  </mat-select>
+</mat-form-field>
+
+<mat-form-field [style.fontSize]="fontSize.value">
+  <mat-label>Autosize textarea</mat-label>
+  <textarea matInput
+            cdkTextareaAutosize
+            #autosize="cdkTextareaAutosize"
+            cdkAutosizeMinRows="2"
+            cdkAutosizeMaxRows="5"></textarea>
+</mat-form-field>

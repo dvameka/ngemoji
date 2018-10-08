@@ -22,22 +22,8 @@ export class AppComponent {
   @Input()
   item: any;
 
-  
   @Output()
   activate = new EventEmitter();
-  
 
- 
-  propagateList(item: any) {
-    console.log (">>> Items Found: ", item);     
-
-    this.itemResult=Object.values(item);
-
-    console.log(">> this.itemResult<< ", this.itemResult);
-
-    this.activate.emit(this.itemResult);
-
-  //  return this.filmResult;
     }
 
-}

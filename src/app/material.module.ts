@@ -9,7 +9,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatCardModule} from '@angular/material/card';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatDatepickerModule} from '@angular/material/datepicker';
-import {MatMomentDateModule} from '@angular/material-moment-adapter'
+import {MatMomentDateModule} from '@angular/material-moment-adapter';
 import {MatSliderModule} from '@angular/material/slider';
 import {MatSelectModule} from '@angular/material/select';
 import {MatTableModule} from '@angular/material/table';
@@ -18,20 +18,18 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 
 
 
-
-
 const MATERIAL = [
-    MatButtonModule, 
-    MatIconModule, 
-    MatInputModule, 
-    MatCheckboxModule, 
-    MatRadioModule, 
-    MatFormFieldModule, 
-    MatCardModule, 
-    MatToolbarModule, 
-    MatDatepickerModule, 
-    MatMomentDateModule, 
-    MatSliderModule, 
+    MatButtonModule,
+    MatIconModule,
+    MatInputModule,
+    MatCheckboxModule,
+    MatRadioModule,
+    MatFormFieldModule,
+    MatCardModule,
+    MatToolbarModule,
+    MatDatepickerModule,
+    MatMomentDateModule,
+    MatSliderModule,
     MatSelectModule,
     MatTableModule,
     MatSortModule,

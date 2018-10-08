@@ -2,11 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-showemoji',
-  template: `
-    <p>
-      showemoji works!
-    </p>
-  `,
+  templateUrl: './showemoji.component.html',
   styleUrls: ['./showemoji.component.css']
 })
 export class ShowemojiComponent implements OnInit {
